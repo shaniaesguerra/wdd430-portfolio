@@ -19,7 +19,7 @@ export default function ProjectCard({ title, description, technologies, link }: 
             </div>
             {link && (
                 <p className="mt-4">
-                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-slate-700 hover:text-blue-700">
                         View Project
                     </a>
                 </p>
