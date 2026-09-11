@@ -13,7 +13,7 @@ interface ProjectListProps {
 
 export default function ProjectList({ projects }: ProjectListProps) {
     return (
-        <section className="container mx-auto p-4">
+        <section className="mx-auto grid max-w-5xl grid-cols-1 gap-6 p-4 md:grid-cols-2">
             {projects.map((project) => (
                 <ProjectCard key={project.title} {...project}/>
             ))}

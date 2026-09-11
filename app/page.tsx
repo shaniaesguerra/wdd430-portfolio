@@ -19,12 +19,14 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4">
       <section className="mb-8 text-center">
-        <h1 className="text-2xl font-bold mb-4 uppercase">My Portfolio</h1>
-        <p className="text-sm font-mono text-foreground">
+        <h1 className="text-2xl font-bold mb-4 uppercase text-brand">My Portfolio</h1>
+        <p className="mx-auto max-w-2xl text-md font-mono text-foreground">
           Welcome to my portfolio! Here you will find a selection of my projects showcasing my skills and experience in web development. Feel free to explore and learn more about the technologies I have used and the work I have done.
         </p>
       </section>
-      <ProjectList projects={projects} />
+      <div className="mx-auto max-w-5xl">
+        <ProjectList projects={projects} />
+      </div>
     </main>
   );
 }
