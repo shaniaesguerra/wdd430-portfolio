@@ -23,7 +23,7 @@ export default function Header() {
               font-bold
               text-[#4B1D68]
               dark:text-[#DDBCFB]">
-                    Shania.</h1>
+                    ShaniaE.</h1>
         </Link>
                 
           <ul className="flex items-center gap-8">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+const CURRENT_YEAR = new Date().getFullYear();
 
 export default function Footer() {  
   return (
@@ -17,7 +18,6 @@ export default function Footer() {
           py-12
         "
       >
-        {/* Top Section */}
         <div
           className="
             flex
@@ -29,7 +29,6 @@ export default function Footer() {
             md:items-start
           "
         >
-          {/* Branding */}
           <div>
             <h2
               className="
@@ -52,7 +51,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <h3 className="font-semibold text-foreground">
               Navigation
@@ -82,34 +80,10 @@ export default function Footer() {
                   About
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  href="/projects"
-                  className="
-                    text-foreground-secondary
-                    hover:text-primary
-                  "
-                >
-                  Projects
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/contact"
-                  className="
-                    text-foreground-secondary
-                    hover:text-primary
-                  "
-                >
-                  Contact
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
-          {/* Socials */}
           <div>
             <h3 className="font-semibold text-foreground">
               Connect
@@ -154,9 +128,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        {/* Bottom Section */}
-            <div
+          <div
             className="
                 mt-10
                 border-t border-border
@@ -164,9 +136,9 @@ export default function Footer() {
             "
             >
             <p className="text-center text-sm text-foreground-secondary">
-                © {new Date().getFullYear()} Shania Esguerra. All rights reserved.
+               Copyright &copy; {CURRENT_YEAR} Shania Esguerra. All rights reserved.
             </p>
-            </div>
+          </div>
         </div>
     </footer>
   );
