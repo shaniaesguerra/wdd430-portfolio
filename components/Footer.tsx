@@ -48,9 +48,7 @@ export default function Footer() {
                 text-foreground-secondary
               "
             >
-              Building software and creating meaningful
-              digital experiences through thoughtful design
-              and development.
+              Software Developer
             </p>
           </div>
 
@@ -158,24 +156,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div
-          className="
-            mt-10
-            border-t border-border
-            pt-6
-          "
-        >
-          <p
+            <div
             className="
-              text-sm
-              text-center
-              text-foreground-secondary
+                mt-10
+                border-t border-border
+                pt-6
             "
-          >
-            Copyright &copy; {new Date().getFullYear()}  Shania Esguerra. All rights reserved.
-          </p>
+            >
+            <p className="text-center text-sm text-foreground-secondary">
+                © {new Date().getFullYear()} Shania Esguerra. All rights reserved.
+            </p>
+            </div>
         </div>
-          </div>
     </footer>
   );
 }

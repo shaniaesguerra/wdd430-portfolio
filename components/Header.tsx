@@ -27,8 +27,10 @@ export default function Header() {
         </Link>
                 
           <ul className="flex items-center gap-8">
-            <li><Link href="/" className="hover:underline">Home</Link></li>
-            <li><Link href="/about" className="hover:underline">About</Link></li>
+            <li><Link href="/" className=" text-[#4B1D68]
+              dark:text-[#DDBCFB] hover:underline ">Home</Link></li>
+            <li><Link href="/about" className=" text-[#4B1D68]
+              dark:text-[#DDBCFB] hover:underline">About</Link></li>
           </ul>
         </nav>
       </header>
