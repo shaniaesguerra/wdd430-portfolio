@@ -37,7 +37,7 @@ export default function Footer() {
                 text-primary
               "
             >
-              Shania.
+              ShaniaE.
             </h2>
 
             <p

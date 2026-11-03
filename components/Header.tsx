@@ -31,6 +31,8 @@ export default function Header() {
               dark:text-[#DDBCFB] hover:underline ">Home</Link></li>
             <li><Link href="/about" className=" text-[#4B1D68]
               dark:text-[#DDBCFB] hover:underline">About</Link></li>
+             <li><Link href="/projects" className=" text-[#4B1D68]
+              dark:text-[#DDBCFB] hover:underline">Projects</Link></li>
           </ul>
         </nav>
       </header>
