@@ -1,3 +1,5 @@
+import ProjectsFromApi from "@/components/ProjectsFromApi";
+
 export default function OpenSourceProjectsPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">
@@ -16,6 +18,18 @@ export default function OpenSourceProjectsPage() {
         <h1 className="mt-4 text-5xl font-bold">
           Open Source Project Page 👩🏽‍💻
         </h1>
+
+      </section>
+
+      <section
+        className="
+                  rounded-3xl
+                  border border-border
+                  bg-surface
+                  p-8
+                "
+      >
+        <ProjectsFromApi endpoint="/api/projects?type=opensource" />
       </section>
     </main>
   );

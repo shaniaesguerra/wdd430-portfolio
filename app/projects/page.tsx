@@ -1,3 +1,5 @@
+import ProjectsFromApi from "@/components/ProjectsFromApi";
+
 export default function ProjectsPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">
@@ -17,6 +19,17 @@ export default function ProjectsPage() {
           Here are my creations 👩🏽‍💻
         </h1>
       </section>
+
+      <section
+          className="
+                 rounded-3xl
+                 border border-border
+                 bg-surface
+                 p-8
+               "
+        >
+          <ProjectsFromApi endpoint="/api/projects" />
+        </section>
     </main>
   );
 }

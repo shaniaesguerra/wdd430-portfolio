@@ -1,28 +1,5 @@
-import ProjectList from "../components/ProjectList";
+import ProjectsFromApi from "../components/ProjectsFromApi";
 import Link from "next/link";
-
-const projects = [
-  {
-    title: "Event Nexus API",
-    description:
-      "A RESTful API for managing events, attendees, and organizers.",
-    technologies: ["Node.js", "Express", "MongoDB", "Mongoose"],
-    link: "https://eventnexus-api-g95e.onrender.com",
-  },
-  {
-    title: "The Ghibli Archive",
-    description:
-      "A web application that provides information about Studio Ghibli films.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Studio Ghibli API",
-      "Jikan API",
-    ],
-    link: "https://www.loom.com/share/83630ed4056240f7ac366bfc79c65670",
-  },
-];
 
 export default function Home() {
   return (
@@ -109,7 +86,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10">
-          <ProjectList projects={projects} />
+          <ProjectsFromApi endpoint="/api/projects?featured=true" />
         </div>
       </section>
     </main>
