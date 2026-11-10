@@ -1,4 +1,5 @@
 import ProjectsFromApi from "@/components/ProjectsFromApi";
+import Loading from "./loading";
 
 export default function OpenSourceProjectsPage() {
   return (
@@ -29,7 +30,9 @@ export default function OpenSourceProjectsPage() {
                   p-8
                 "
       >
-        <ProjectsFromApi endpoint="/api/projects?type=opensource" />
+        <ProjectsFromApi
+          endpoint="/api/projects?type=opensource"
+          loadingFallback={<Loading/>} />
       </section>
     </main>
   );
